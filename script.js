@@ -1,5 +1,5 @@
 function updateCountdown() {
-    const weddingDate = new Date("2025-02-16T18:00:00");
+    const weddingDate = new Date("2025-02-16T17:00:00");
     const now = new Date();
     const difference = weddingDate - now;
 
@@ -23,8 +23,8 @@ function addToCalendar() {
     const event = {
         title: "Boda Leo & Karen",
         location: "Jardín las Orquídeas, 6 avenida, Guatemala",
-        startDate: "2025-02-16T18:00:00",
-        endDate: "2025-02-16T23:00:00"
+        startDate: "2025-02-16T17:00:00",
+        endDate: "2025-02-16T22:00:00"
     };
 
     const calendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(event.title)}&location=${encodeURIComponent(event.location)}&dates=${event.startDate.replace(/[-:]/g, '')}/${event.endDate.replace(/[-:]/g, '')}`;
@@ -37,7 +37,7 @@ function openMap() {
 }
 
 function confirmAssistance() {
-    const phoneNumber = "50254210389";
+    const phoneNumber = "50235435006";
     const message = "¡Hola! Confirmo mi asistencia a su boda.";
     
     window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
